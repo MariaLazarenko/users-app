@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-6">
+    <img #userImg src="" class="img-fluid">
+  </div>
+  <div class="col-sm-6">
+    <form *ngIf="userForm" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label class="font-weight-bold" for="userName">Name</label>
+        <input type="text" class="form-control" id="userName" formControlName="userName">            
+      </div>
+      <div class="form-group">
+        <label class="font-weight-bold" for="userAge">Age</label>
+        <input type="number" class="form-control" id="userAge" formControlName="userAge">            
+      </div>
+      <div class="form-group">
+        <label class="font-weight-bold" for="userInfo">Info</label>
+        <input ype="text" class="form-control" id="userInfo" formControlName="userInfo">            
+      </div>
+      <div class="form-group">
+        <label class="font-weight-bold" for="userPhotoUrl">Photo URL</label>
+        <input ype="text" class="form-control" id="userPhotoUrl" formControlName="userPhotoUrl">            
+      </div>
+      <button class="btn btn-success" type="submit" [disabled]="!userForm.valid">Save</button>
+    </form>
+  </div>
+</div>

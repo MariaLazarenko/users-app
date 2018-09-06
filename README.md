@@ -1,27 +1,31 @@
-# UsersApp
+# Users App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+### About
+Web CRUD application shows all users from database and allows to edit, delete and add new users.
+Application was created using:
+- Angular 5
+- Firebase
+- Bootstrap 4
 
-## Development server
+### Online Demo
+http://users.bytefrog.ml/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
+### Requirements
+Be sure you have installed on your local machine the following: [Ruby](https://www.ruby-lang.org/en/downloads/), [Node.js](https://nodejs.org/en/), [npm](https://www.npmjs.com/get-npm), [Angular CLI](https://github.com/angular/angular-cli/wiki).
 
-## Code scaffolding
+### How to Install 
+Start the terminal from app's root folder and run command "npm install" to install all dependencies:
+```
+npm install
+```
+### Launch Instructions
+To see app in action start the terminal from app's root folder and run command "ng serve":
+```
+ng serve
+```
+Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Todos
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Allow to change users list only by authorised users

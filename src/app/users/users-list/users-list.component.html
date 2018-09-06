@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let user of users; let i = index" routerLink="user/{{ user.id }}" routerLinkActive="active" (click)="onSelect(user)">
+        {{ user.name }}
+      </li>
+    </ul>
+  </div>
+</div>
